@@ -17,7 +17,7 @@ func TestCustomWorker(t *testing.T) {
 	worker1, ok := pool.workers[0].worker.(*mockWorker)
 
 	if !ok {
-		t.Fatal("Wrong typpe of worker in pool")
+		t.Fatal("Wrong type of worker in pool")
 	}
 
 	if worker1.terminated {
